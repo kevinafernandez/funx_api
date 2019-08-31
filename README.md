@@ -13,9 +13,9 @@ Simple API basada en un CRUD para Artistas y Albúmes, donde dichos datos se mue
 	
 ## Tecnologías
 Para este proyecto debes considerar o instalar las siguientes versiones:
-  * Ruby: 2.5.3
-  * Rails: 5.2.3
-  * Base de dato relacional: PostgreSQL 9.5
+  * Ruby: `2.5.3`
+  * Rails: `5.2.3`
+  * PostgreSQL: `>= 9.5`
 
 ## Instalación
 * Clona este repositorio vía HTTPS: `git clone https://github.com/kevinafernandez/funx_api.git`
