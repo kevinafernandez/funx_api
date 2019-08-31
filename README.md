@@ -27,7 +27,7 @@ Para este proyecto debes considerar o instalar las siguientes versiones:
 
 * Ejecuta todas las migraciones: `rails db:migrate`
 
-* En caso de ejecutar la API y la aplicación al mismo tiempo, inicia el servidor de la API en otro puerto, ejemplo: `rails server -p3001` ,de lo contrario, ejecutalo de forma tradicional: `rails server`
+* En caso de ejecutar la API y la aplicación al mismo tiempo, inicia el servidor de la API en otro puerto, ejemplo: `rails server -p3001` , de lo contrario, ejecutalo de forma tradicional: `rails server`
 
 
 ## Carpetas
@@ -42,40 +42,38 @@ Para este proyecto debes considerar o instalar las siguientes versiones:
 
 ## Ejemplos
 
-Utiliza algún software o librería de tu preferencia para los servicios web (POSTMAN, Curl, entre otros). En primera instancia, se debe crear un artista para luego asignarle uno o muchos album(es).
+Utiliza algún software o librería de tu preferencia para los servicios web (POSTMAN, Curl, entre otros). NOTA: se debe crear un artista para luego asignarle uno o muchos album(es).
 
-1. Artists
+###### Artists
 ```
 * Obtener todos los artistas:
     GET /api/v1/artists/
 
-* Crear un artista
+* Crear un artista:
     POST /api/v1/artists/
     {
       "name": "Artist name (required)"
     }
 
-* Obtener un artista    
+* Obtener un artista:    
     GET /api/v1/artists/1
 
-* Actualizar un artista
+* Actualizar un artista:
     PUT/PATCH /api/v1/artists/1
     {
-      "campo1": "dato1",
-      "campo2": "dato2",
-      "campo_n": "dato_n"
+      "name": "Artist name updated"
     }
 
- * Eliminar un artista
+ * Eliminar un artista:
     DELETE /api/v1/artists/1
 ```
 
-2. Albums
+###### Albums
 ```
 * Obtener todos los albumes:
     GET /api/v1/albums/
 
-* Crear un album
+* Crear un albúm:
     POST /api/v1/albums/
     {
       "name": "Album name (required)",
@@ -84,10 +82,10 @@ Utiliza algún software o librería de tu preferencia para los servicios web (PO
       "artist_id": 1 (required)
     }
 
-* Obtener un album    
+* Obtener un albúm:    
     GET /api/v1/albums/1
 
-* Actualizar un album
+* Actualizar un albúm:
     PUT/PATCH /api/v1/albums/1
     {
       "campo1": "dato1",
@@ -95,9 +93,9 @@ Utiliza algún software o librería de tu preferencia para los servicios web (PO
       "campo_n": "dato_n"
     }
 
- * Reproducir un album
+ * Reproducir un albúm:
     GET /api/v1/albums/1/play
 
- * Eliminar un album
+ * Eliminar un albúm:
     DELETE /api/v1/albums/1
 ```
