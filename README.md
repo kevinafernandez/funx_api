@@ -3,9 +3,9 @@
 API basada en Ruby on Rails 5.2.3
 
 ## Tabla de contenidos
-* [Información general](#informacion-general)
+* [Información general](#información-general)
 * [Tecnologías](#tecnologías)
-* [Instalación](#instalacion) 
+* [Instalación](#instalación) 
 * [Carpetas](#carpetas)
 
 ## Información general
