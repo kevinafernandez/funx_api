@@ -7,6 +7,7 @@ API basada en Ruby on Rails 5.2.3
 * [Tecnologías](#tecnologías)
 * [Instalación](#instalación) 
 * [Carpetas](#carpetas)
+* [Ejemplos](#ejemplos)
 
 ## Información general
 Simple API basada en un CRUD para Artistas y Albúmes, donde dichos datos se muestran de forma gráfica en una aplicación: `https://github.com/kevinafernandez/funx.git`
@@ -38,3 +39,65 @@ Para este proyecto debes considerar o instalar las siguientes versiones:
 * `serializers` - Contiene la estructura para la serialización de objetos.
 
 * `db` - Contiene las migraciones para crear nuestro schema en la base de datos.
+
+## Ejemplos
+
+Utiliza algún software o librería de tu preferencia para los servicios web (POSTMAN, Curl, entre otros). En primera instancia, se debe crear un artista para luego asignarle uno o muchos album(es).
+
+1. Artists
+```
+* Obtener todos los artistas:
+    GET /api/v1/artists/
+
+* Crear un artista
+    POST /api/v1/artists/
+    {
+      "name": "Artist name (required)"
+    }
+
+* Obtener un artista    
+    GET /api/v1/artists/1
+
+* Actualizar un artista
+    PUT/PATCH /api/v1/artists/1
+    {
+      "campo1": "dato1",
+      "campo2": "dato2",
+      "campo_n": "dato_n"
+    }
+
+ * Eliminar un artista
+    DELETE /api/v1/artists/1
+```
+
+2. Albums
+```
+* Obtener todos los albumes:
+    GET /api/v1/albums/
+
+* Crear un album
+    POST /api/v1/albums/
+    {
+      "name": "Album name (required)",
+      "description": "optional",
+      "release_date": "optional",
+      "artist_id": 1 (required)
+    }
+
+* Obtener un album    
+    GET /api/v1/albums/1
+
+* Actualizar un album
+    PUT/PATCH /api/v1/albums/1
+    {
+      "campo1": "dato1",
+      "campo2": "dato2",
+      "campo_n": "dato_n"
+    }
+
+ * Reproducir un album
+    GET /api/v1/albums/1/play
+
+ * Eliminar un album
+    DELETE /api/v1/albums/1
+```
