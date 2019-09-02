@@ -7,7 +7,7 @@ class Album < ApplicationRecord
 
   scope :most_played, -> { order('total_played DESC') }
 
-  def owner
+  def artist_name
     artist.name&.titleize
   end
 
