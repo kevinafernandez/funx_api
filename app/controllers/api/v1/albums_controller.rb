@@ -40,7 +40,7 @@ module Api
         @album.destroy
       end
 
-      # PATCH /albums/1/play
+      # GET /albums/1/play
       def play
         @album.increment!(:total_played)
         render json: serializer.new(@album)
