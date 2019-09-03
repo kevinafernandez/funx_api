@@ -77,8 +77,8 @@ Utiliza algún software o librería de tu preferencia para los servicios web (PO
     POST /api/v1/albums/
     {
       "name": "Album name (required)",
-      "description": "optional",
-      "release_date": "optional",
+      "description": "album description (optional)",
+      "release_date": "01/01/2015 (optional)",
       "artist_id": 1 (required)
     }
 
